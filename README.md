@@ -3,12 +3,12 @@ This project contains a client application built into fit.web and services appen
 This project is built using fastifyjs as the server and infernojs as a front-end framework
 
 ## Setup & Run (local)
-1. NPM Install, starting from root (server)
+1. npm install, starting from root (server)
 ``` bash
 cd fit.gateway.api
 npm install
 ```
-2. NPM Install, starting from root (client)
+2. npm install, starting from root (client)
 ``` bash
 cd fit.web
 npm install
