@@ -1,0 +1,28 @@
+/* For mobile phones: */
+.card-layout {
+  position: relative;
+  display: block;
+  height: 150px;
+  width: 100%;
+  margin: 5% 0;
+  background-color: white;
+  box-shadow: 0 2px 3px #898989;
+  padding: 20px;
+}
+
+.card-layout h2 {
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-layout {
+    position: relative;
+    display: inline-block;
+    height: 150px;
+    width: 25%;
+    margin: 2%;
+    background-color: white;
+    box-shadow: 0 2px 3px #898989;
+    padding: 20px;
+  }
+}

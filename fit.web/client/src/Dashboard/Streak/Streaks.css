@@ -1,0 +1,9 @@
+.streak-position {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.streak-display {
+  font-size: 2.5em;
+}

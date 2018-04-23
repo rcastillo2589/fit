@@ -1,0 +1,16 @@
+{
+  "name": "fit.web",
+  "version": "0.0.1",
+  "description": "Fitness front-end server",
+  "main": "startup.js",
+  "scripts": {
+    "start": "node startup.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Castillo",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^1.1.1",
+    "serve-static": "^1.13.2"
+  }
+}

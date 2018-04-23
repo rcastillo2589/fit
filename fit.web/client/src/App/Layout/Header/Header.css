@@ -1,0 +1,36 @@
+.App-header {
+  position: relative;
+  width: 100%;
+  height: 75px;
+  background-color: #3d464d;
+  color: #f8f8f8;
+  box-shadow: 0 2px 15px black;
+}
+
+/* For mobile phones: */
+.header-container {
+  position: relative;
+  height: 100%;
+  padding: 12px 10px;
+}
+
+.header-title {
+  display: inline;
+  margin: 0 10px;
+  vertical-align: top;
+}
+
+.header-links {
+  position: relative;
+  height: 100%;
+  vertical-align: top;
+  float: right;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-container {
+    position: relative;
+    height: 100%;
+    padding: 12px 75px;
+  }
+}

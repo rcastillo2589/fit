@@ -1,0 +1,19 @@
+.goals-list {
+  margin: 0;
+}
+
+.goals-list li {
+  list-style: none;
+}
+
+.goal-name {
+  position: relative;
+  display: inline-block;
+  width: 75px;
+}
+
+.goal-progress {
+  position: relative;
+  left: 20px;
+  vertical-align: middle;
+}

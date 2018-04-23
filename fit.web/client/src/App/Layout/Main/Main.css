@@ -1,0 +1,11 @@
+/* For mobile phones: */
+.main-container {
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-container {
+    margin: 40px 0 10px 0;
+    padding: 0 75px;
+  }
+}

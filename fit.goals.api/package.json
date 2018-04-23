@@ -1,0 +1,22 @@
+{
+  "name": "fit.goals.api",
+  "version": "1.0.0",
+  "description": "Fitness goals service",
+  "main": "startup.js",
+  "scripts": {
+    "start": "node startup.js",
+    "test": "./node_modules/.bin/mocha --recursive --reporter spec"
+  },
+  "author": "Robert Castillo",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^1.3.0",
+    "mongodb": "^3.0.7"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "cors": "^2.8.4",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.1.1"
+  }
+}
