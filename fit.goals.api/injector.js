@@ -2,7 +2,6 @@ const DaoFactory = require('./src/dao/daoFactory');
 const MongoClient = require('mongodb').MongoClient;
 
 const classes = {
-  // TODO Setup MongoDb as client
   'DaoFactory': (dependency = MongoClient) =>  {
     if(dependency.name === 'MongoClient') {
       return new DaoFactory(dependency);

@@ -5,7 +5,7 @@ This project is built using fastifyjs as the server and infernojs as a front-end
 ## Setup & Run (local)
 1. npm install, starting from root (server)
 ``` bash
-cd fit.gateway.api
+cd fit.[service].api
 npm install
 ```
 2. npm install, starting from root (client)
@@ -15,9 +15,13 @@ npm install
 cd client
 npm install
 ```
-3. Run server
+3. Run services
 ``` bash
 node startup.js
+```
+To run with prod settings
+``` bash
+node startup.js prod
 ```
 4. Run client
 ``` bash
@@ -29,8 +33,8 @@ From here you should be able to see the front-end connecting to the back-end
 ## Deploying to Docker
 1. Create service instance
 ``` bash
-cd fit.gateway.api
-docker build -t fit-summary-api .
+cd fit.[service].api
+docker build -t fit-[service]-api .
 ```
 2. Create client instance
 ``` bash
