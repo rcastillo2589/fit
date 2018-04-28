@@ -43,10 +43,24 @@ async function goalsRoute(fastify, options) {
     }
   });
 
+  // Edit goal
+  fastify.patch('/goal/:id', async(request, reply) => {
+    const goalId = new ObjectId(request.params['id']);
+    const goalEdit = request.body.goal;
+    try {
+      let result = await inject(DaoFactory)
+        .getGoalsDao()
+        .editGoal(goalId, goalEdit);
+      reply.send(result);
+    } catch(err) {
+      reply.code(500).send(err);
+    }
+  });
+
   // Create a progress mark
   fastify.post('/goal/progress', async(request, reply) => {
-    let goalId = new ObjectId(request.body.goalId);
-    let progress = request.body.progress;
+    const goalId = new ObjectId(request.body.goalId);
+    const progress = request.body.progress;
     try {
       let result = await inject(DaoFactory)
         .getGoalsDao()
@@ -70,7 +84,7 @@ async function goalsRoute(fastify, options) {
     }
   });
 
-  // Delete a single goal for by id
+  // Delete a single goal by id
   fastify.delete('/goal/:id', async(request, reply) => {
     const goalId = new ObjectId(request.params['id']);
     try {

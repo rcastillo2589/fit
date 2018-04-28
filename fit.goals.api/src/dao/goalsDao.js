@@ -35,6 +35,17 @@ class GoalsDao {
     });
   }
 
+  async editGoal(goalId, goal) {
+    return await connect(this.client, (db) => {
+      const collection = db.collection('goals');
+      return collection.update(
+        /* Query */
+        { "_id": goalId },
+        { $set: goal }
+      );
+    });
+  }
+
   async addProgressMark(goalId, progress) {
     return await connect(this.client, (db) => {
       const collection = db.collection('goals');
