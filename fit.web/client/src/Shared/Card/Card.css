@@ -2,12 +2,13 @@
 .card-layout {
   position: relative;
   display: block;
-  height: 150px;
+  height: 175px;
   width: 100%;
   margin: 5% 0;
   background-color: white;
   box-shadow: 0 2px 3px #898989;
   padding: 20px;
+  overflow: hidden;
 }
 
 .card-layout h2 {
@@ -18,11 +19,12 @@
   .card-layout {
     position: relative;
     display: inline-block;
-    height: 150px;
-    width: 25%;
-    margin: 2%;
+    height: 175px;
+    width: 30%;
+    margin: 1%;
     background-color: white;
     box-shadow: 0 2px 3px #898989;
     padding: 20px;
+    overflow: hidden;
   }
 }

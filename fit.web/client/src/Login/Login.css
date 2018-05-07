@@ -1,0 +1,15 @@
+.login-center {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.login-btn {
+  position: relative;
+  top: 40px;
+  background-color: #4286f4;
+  border: 1px solid black;
+  color: white;
+  width: 250px;
+  height: 50px;
+}

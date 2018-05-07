@@ -1,1 +1,14 @@
+.dashboard-row-s {
+  width: 100%;
+  height: 200px;
+}
 
+.dashboard-row-m {
+  width: 100%;
+  height: 400px;
+}
+
+.dashboard-row-l {
+  width: 100%;
+  height: 600px;
+}
